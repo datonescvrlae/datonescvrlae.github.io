@@ -1,13 +1,13 @@
 :root{
-       --border-light: rgb(63, 70, 80);
+       --border-light-colour: rgb(63, 70, 80);
 
-       --background-light: rgb(13, 17, 23);
-       --background-dark: rgb(1, 4, 9);
+       --background-light-colour: rgb(13, 17, 23);
+       --background-dark-colour: rgb(1, 4, 9);
 
-       --button-hovered: rgba(255, 255, 255, 0.08);
-       --button-click: rgba(255, 255, 255, 0.12);
+       --button-hovered-colour: rgba(255, 255, 255, 0.08);
+       --button-click-colour: rgba(255, 255, 255, 0.12);
 
-       --default-gap-size: 16px;
+       --element-gap-size: 16px;
        --page-gap-size: 20px;
 
        --dark-text-colour: rgb(101, 108, 117);
@@ -23,11 +23,11 @@
 }
 
 body{
-       background-color: var(--background-light);
+       background-color: var(--background-light-colour);
 }
 
 header, footer{
-       background-color: var(--background-dark);
+       background-color: var(--background-dark-colour);
 }
 
 .flex-center{
@@ -41,17 +41,17 @@ header{
 
        padding-bottom: 20px;
 
-       border-bottom: 1px solid var(--border-light);
+       border-bottom: 1px solid var(--border-light-colour);
        height: 50px;
 }
 
 main{
-       background-color: var(--background-light);
+       background-color: var(--background-light-colour);
        height: 1000px;
 }
 
 footer{
-       border-top: 1px solid var(--border-light);
+       border-top: 1px solid var(--border-light-colour);
        height: 100px;
 }
 
@@ -88,27 +88,27 @@ footer{
 }
 
 .align-left img, .align-left button{
-       margin-right: var(--default-gap-size);
+       margin-right: var(--element-gap-size);
 }
 
 .align-right img, .align-right button{
-       margin-left: var(--default-gap-size);
+       margin-left: var(--element-gap-size);
 }
 
 button, .square-button, .page-main-button{
        background-color: rgba(0, 0, 0, 0);
 
-       border: 1px solid var(--border-light);
+       border: 1px solid var(--border-light-colour);
        border-radius: 5px;
 }
 
 button:hover, .square-button:hover, .page-main-button:hover{
-       background-color: var(--button-hovered);
+       background-color: var(--button-hovered-colour);
        cursor: pointer;
 }
 
 button:active, .square-button:active, .page-main-button:active{
-       background-color: var(--button-click);
+       background-color: var(--button-click-colour);
 }
 
 .square-button{
@@ -130,7 +130,7 @@ button:active, .square-button:active, .page-main-button:active{
 }
 
 .img-button:hover{
-       background-color: var(--background-dark);
+       background-color: var(--background-dark-colour);
 }
 
 .invis-button{
